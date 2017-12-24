@@ -1,0 +1,33 @@
+<! DOCTYPE html>
+<html>
+<head>
+  <title> CSS ANIMATIONS
+  </title>
+  <style>
+  @keyframes example{
+    0% {background-color: #2980B9;left: 0px;top:0px;}
+    25%{background-color: #2ECC71;left:500px;top:0px; }
+    50%{background-color: red;left:500px;top:500px;}
+    75%{background-color: #FF8A65 ;left:0px;top:500px; }
+    100%{background-color: #2980B9;left:0px;top:0px;}
+  }
+  div{
+    width:200px;
+    height:200px;
+    background-color: #2980B9;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    animation-direction: alternate-reverse;
+    animation-delay: 1s;
+  }
+  </style>
+</head>
+<body>
+  <p>The given box shows animations:</n></p>
+  <div> COOL HUH:)</div>
+</body>
+</html>
