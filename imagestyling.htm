@@ -1,0 +1,70 @@
+<! DOCTYPE html>
+<html>
+<head>
+  <title>IMAGE STYLING
+  </title>
+  <style>
+  img{
+    border:4px solid #1F618D  ;
+    border-radius: 30px;
+    margin:auto;
+  }
+
+.edit
+     {-webkit-filter: saturate(7); filter: saturate(7);}
+
+     .edit1{
+       -webkit-filter: blur(4px);filter: blur(4px);
+     }
+
+     .image{
+       opacity:1;
+       backface-visibility:hidden;
+       transition: .5s;
+       transition-timing-function: ease;
+
+     }
+     .middle{
+       opacity:0;
+       transition:.5s;
+       transition-timing-function: ease;
+       top:100%;
+       left:10%;
+       position:absolute;
+      -webkit-transform:translate(-50%,-50%);
+    transform: translate(-50%,-50%);    }
+    
+     .main:hover .middle{
+       opacity:1;
+     }
+     .main:hover .image{
+       opacity:0.2;
+     }
+     .text{
+       font-size: 20px;
+display: block;
+       color:black;
+       background-color: green;
+
+     }
+
+  </style>
+</head>
+<body>
+  <p>This is an image:</n></p>
+  <a href="head.jpg">
+  <img src="head.jpg" alt="digital art" width="200px" height="200px">
+</a>
+  <p>This is an edited pic:</n></p>
+  <div><img class="edit" src="head.jpg" width="200px" height="200px"></div>
+  <p>Another edited one:</n></p>
+  <img class="edit1" src="head.jpg" width="200px" height="200px">
+  <p>Hover the mouse on the image</p>
+  <div class="main">
+    <img class="image" src="head.jpg" width="400px" height="400px">
+    <div class="middle">
+    <div class="text"> application of computer graphics</div>
+  </div>
+  </div>
+</body>
+</html>
