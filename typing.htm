@@ -1,0 +1,21 @@
+<! DOCTYPE html>
+<html>
+<body>
+  <h1>Typing effect</h1>
+  <button onclick="typeWriter()">CLICK ME</button>
+    <p id="demo"></p>
+  <script>
+  var i=0;
+  var txt='Hello This is cool to konw that I can learn to use git';
+  var speed=50;
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter,speed);
+    }
+  }
+
+  </script>
+</body>
+</html>
