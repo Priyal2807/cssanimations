@@ -5,12 +5,13 @@
   <style>
   .mySlides{
     display:none;
+    text-align: center;
+    padding:30px;
   }
   .slideshow-container{
-    max-width:100%;
-    position:relative;
+    position: relative;
     margin:auto;
-    background-color: #5DADE2;  
+    background-color: #5DADE2;
   }
 
   * {box-sizing: border-box}
@@ -50,15 +51,24 @@ body {font-family: Verdana, sans-serif; margin:0}
   height: 15px;
   width:15px;
   border-radius: 50%;
-  background-color: #bbb;
+  background-color: #EB984E  ;
   transition: background-color .6s ease;
+display: inline-block;
 }
-p{
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+q{
   text-align: center;
   font-size: 25px;
   font-weight: bold;
   color:black;
 
+}
+.author{
+color:red;
 }
 
   </style>
@@ -66,28 +76,36 @@ p{
 <body>
   <div class='slideshow-container'>
     <div class="mySlides fade">
-      <p>“I have found that the more I teach those who want to learn, the more I learn.”</p>
+      <q>I have found that the more I teach those who want to learn, the more I learn.</q>
+      <p class="author">-Robert T Kiyosaki</p>
     </div>
     <div class="mySlides fade">
-      <p> “A mistake is a signal that it is time to learn something new, something you don’t know before."</p>
+      <q> A mistake is a signal that it is time to learn something new, something you don’t know before.</q>
+        <p class="author">-Robert T Kiyosaki</p>
     </div>
     <div class="mySlides fade">
-      <p>“Complaining about your current position in life is worthless. Have a spine and do something about it instead.”</p>
+      <q>Complaining about your current position in life is worthless. Have a spine and do something about it instead.</q>
+        <p class="author">-Robert T Kiyosaki</p>
     </div>
     <div class="mySlides fade">
-      <p> “If you avoid failure, you also avoid success.”</p>
+      <q> If you avoid failure, you also avoid success.</q>
+        <p class="author">-Robert T Kiyosaki</p>
     </div>
     <div class="mySlides fade">
-      <p>It’s more important to grow your income than cut your expenses. It’s more important to grow your spirit that cut your dreams</p>
+      <q>It’s more important to grow your income than cut your expenses. It’s more important to grow your spirit that cut your dreams</q>
+        <p class="author">-Robert T Kiyosaki</p>
     </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <br>
-  <div style="text-align:center">
+  <div class="dot-container">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
   </div>
+  <script src="slideshow.js"></script>
 </body>
 </html>
