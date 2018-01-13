@@ -16,13 +16,21 @@ font-family: sans-serif;
 .para{
   margin:0 auto;
   position: relative;
-  font-size: 30px;
+  font-size: 15px;
   line-height: 2;
   max-width: 500px;
+  position: absolute;
+  top:80%;
+  left:50%;
+  transform: translate(-5%, -5%);
+  padding :20px 20px 20px 20px;
+  font-weight: bold;
+
 }
 a{
   color:black;
-  background-color: white;
+  /*background-color: white;*/
+   background:rgba(0,0,0,0.05);
   border-radius:20px;
 }
 .menu{
@@ -36,6 +44,14 @@ a{
   margin:0 20px;
   color:black;
 }
+.img{
+  background-image: url("image3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+
+}
 </style>
 </head>
 <body>
@@ -48,6 +64,7 @@ a{
        <li><a href="">Contact Us</a></li>
      </ul>
    </nav>
+   <div class="img"></div>
   <div class="para">
 Travelling gives soul to your life ,wings to your <a href="">dreams</a> ,ideas to your mind and <a href="">hope</a> for a better life.Let's get lost where there is no wifi.
 those who <a href="">wander</a> are not lost.Let's bring our <a href="">friends</a> and go to places <a href="">unplanned</a>.Let's eat, drink ,sleep and repeat.Let's not limit our day to day routine to just
