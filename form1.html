@@ -2,7 +2,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
+	<style type="text/css">
+	*{
+		box-sizing: border-box;
+}
+		input[type=text]:hover{
+			background-color: #B2BABB   ;}
+
+input[type=text],select,textarea{
+	width:40%;
+	border-radius: 4px;
+	padding: 20px;
+	resize: vertical;
+	border:4px #AF601A solid;
+display: inline
+	box-sizing: border-box;
+	justify-content: flex-end;
+	margin:20px;
+}
+label{
+	display: inline-block;
+	padding: 20px 20px 20px 0px;
+}
+@media (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+	</style>
 </head>
 <body>
 	<div class="container">
